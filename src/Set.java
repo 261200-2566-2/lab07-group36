@@ -97,16 +97,16 @@ public class Set<E> {
         System.out.println(FoodSet.isEmpty());
         FoodSet.remove("hamburger");
         FoodSet.contains("hamburger");
-        Set<String> otherSet = new Set<>();
-        otherSet.add("sticky rice");
-        otherSet.add("chicken wing");
-        FoodSet.retainAll(otherSet);
+        Set<String> otherFoodSet = new Set<>();
+        otherFoodSet.add("sticky rice");
+        otherFoodSet.add("chicken wing");
+        FoodSet.retainAll(otherFoodSet);
         FoodSet.printSet();
-        otherSet.printSet();
+        otherFoodSet.printSet();
         FoodSet.iterator();
-        FoodSet.containsAll(otherSet);
+        FoodSet.containsAll(otherFoodSet);
         FoodSet.clear();
         System.out.println(FoodSet.size());
-        System.out.println(otherSet.size());
+        System.out.println(otherFoodSet.size());
     }
 }
